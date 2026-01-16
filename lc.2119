@@ -1,0 +1,28 @@
+class Solution {
+    public boolean isSameAfterReversals(int num) {
+        int n=num;
+
+        int nc,n1c,n1=0,n2=0,d;
+        nc=n;
+        while(n!=0){
+         d=n%10;
+         n1=n1*10+d;
+         n=n/10;
+
+        }
+     
+        while(n1!=0){
+         d=n1%10;
+         n2=n2*10+d;
+         n1=n1/10;
+
+        }
+        if(nc==n2){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+}
