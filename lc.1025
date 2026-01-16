@@ -1,0 +1,11 @@
+class Solution {
+    public boolean divisorGame(int n) {
+       int num=n;
+       if(num%2==0){
+        return true;
+       }
+       else{
+        return false;
+       }
+    }
+}
